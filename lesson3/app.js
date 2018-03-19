@@ -65,3 +65,15 @@ ctx4.closePath();
 ctx4.stroke();
 ctx4.fillStyle = "brown";
 ctx4.fill();
+
+var c5 = document.getElementById('myCanvas5');
+var ctx5 = c5.getContext('2d');
+ctx5.beginPath();
+ctx5.strokeStyle = "grey";
+ctx5.moveTo(150,50);
+ctx5.lineTo(200,200);
+ctx5.arc(150,200,50,0,3.14);
+ctx5.lineTo(150,50);
+ctx5.stroke();
+ctx5.fillStyle = "silver";
+ctx5.fill();
