@@ -4,7 +4,7 @@ var ctx = canvas.getContext("2d");
 // Width and height of canvas
 var WIDTH = 600;
 var HEIGHT = 600;
-// position and radius of player
+// position and size of player
 var x = 300;
 var y = 300;
 var s = 50;
