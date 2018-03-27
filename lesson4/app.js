@@ -53,7 +53,21 @@ ctx.closePath();
 ctx.fillStyle = "ivory";
 ctx.fill();
 
+//OPTIONAL - Importing a google font to load before the text shows on the canvas
+WebFontConfig = {
+  google:{ families: ['Bangers'] },
+  active: function(){textSetup();},
+};
+(function(){
+  var wf = document.createElement("script");
+  wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js';
+  wf.async = 'true';
+  document.head.appendChild(wf);
+})();
+
 //Text
-ctx.font = "55px Bangers";
-ctx.fillStyle = "ivory";
-ctx.fillText("Avengers Assemble !", 210, 80);
+function textSetup(){
+	ctx.font = "55px Bangers";
+	ctx.fillStyle = "ivory";
+	ctx.fillText("Avengers Assemble !", 210, 80);
+}
